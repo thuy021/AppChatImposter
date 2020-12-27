@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WelcomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/container_action_bar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#016AFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/btnBack_DangKy_HoTen"
+            android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+            android:background="#00FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageButton>
+
+        <TextView
+            android:textColor="#fff"
+            android:fontFamily="@font/rubik_medium"
+            app:layout_constraintStart_toStartOf="@+id/btnBack_DangKy_HoTen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Tạo tài khoản"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f3f3f3"
+        android:text="Sử dụng tên thật giúp bạn bè dễ dàng nhận ra bạn" />
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextHoTen_DangKy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Tên đầy đủ"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnTiepTuc_HoTen"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_button_continue"
+            android:text="Tiếp tục"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:fontFamily="@font/rubik_medium"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".LayLaiMatKhauActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/container_action_bar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#016AFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/btnBack_LayLaiMatKhau"
+            android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+            android:background="#00FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Lấy lại mật khẩu"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnCross_DangNhap"
+            app:layout_constraintStart_toStartOf="@+id/btnBack_LayLaiMatKhau"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"></TextView>
+
+        <ImageButton
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="#00FFFFFF"
+            android:id="@+id/btnCross_DangNhap"
+            android:src="@drawable/ic_baseline_add_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageButton>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f3f3f3"
+        android:text="Nhập số điện thoại của bạn để nhận mã xác nhận" />
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etxtSoDienThoai_QuenMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Số điện thoại"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/btnTiepTuc_QuenMatKhau"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_button_continue"
+            android:text="Tiếp tục"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:fontFamily="@font/rubik_medium"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+</LinearLayout>

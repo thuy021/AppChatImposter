@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/imenu_AddBanBe"
+        android:title="Thêm bạn bè"/>
+    <item android:id="@+id/imenu_GoiY"
+        android:title="Danh sách gợi ý"/>
+</menu>

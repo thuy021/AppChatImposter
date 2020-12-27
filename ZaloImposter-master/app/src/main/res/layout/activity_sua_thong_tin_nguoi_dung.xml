@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WelcomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/container_action_bar_sua_infor"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#016AFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/btnBack_SuaThongTin"
+            android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+            android:background="#00FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Thông tin cá nhân"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnCross_DangNhap"
+            app:layout_constraintStart_toStartOf="@+id/btnBack_SuaThongTin"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"></TextView>
+
+        <ImageButton
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="#00FFFFFF"
+            android:id="@+id/btnCross_DangNhap"
+            android:src="@drawable/ic_baseline_add_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageButton>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/container_action_bar_sua_infor"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_baseline_account_circle_24"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"></ImageView>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textAlignment="textEnd"
+                android:id="@+id/txtHoTen_EditInfor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="#454545"
+                android:textSize="15sp"
+                android:text="Họ và Tên"
+                android:paddingEnd="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <EditText
+                android:id="@+id/etxtHoTen_EditInfor"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="#858585"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtHoTen_EditInfor"
+                app:layout_constraintTop_toTopOf="parent"></EditText>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtGioiTinh_EditInfor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="#454545"
+                android:textAlignment="textEnd"
+                android:textSize="15sp"
+                android:text="Giới Tính"
+                android:paddingEnd="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtGioiTinh_EditInfor"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/rbtnGender_Nam_EditInfor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nam"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rbtnGender_Nu_EditInfor"
+                    android:layout_marginStart="15dp"
+                    android:text="Nữ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></RadioButton>
+            </RadioGroup>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textAlignment="textEnd"
+                android:id="@+id/txtNgaySinh_EditInfor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="#454545"
+                android:textSize="15sp"
+                android:text="Ngày Sinh"
+                android:paddingEnd="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <EditText
+                android:id="@+id/etxtNgaySinh_EditInfor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_medium"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#858585"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnDatePicker"
+                app:layout_constraintStart_toEndOf="@+id/txtNgaySinh_EditInfor"
+                app:layout_constraintTop_toTopOf="parent"></EditText>
+
+            <ImageButton
+                android:background="#00000000"
+                android:id="@+id/btnDatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_date_24"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="8dp"></ImageButton>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_button_continue"
+            android:textColor="#fff"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:id="@+id/btnCapNhat_EditInfor"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:text="Cập Nhật Thông Tin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

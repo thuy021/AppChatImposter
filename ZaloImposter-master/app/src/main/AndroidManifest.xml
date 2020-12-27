@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    package="com.example.appchat">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".DanhSachGoiYKetBan"></activity>
+        <activity android:name=".ThemBanVaoNhomActivity" />
+        <activity android:name=".TaoNhomActivity" />
+        <activity android:name=".NhanTinNhomActivity" />
+        <activity android:name=".TuyChonChatActivity" />
+        <activity android:name=".NhanTinDonActivity" />
+        <activity android:name=".ThongTinChapNhanLoiMoiKetBan" />
+        <activity android:name=".DanhSachLoiMoiKetBanActivity" />
+        <activity android:name=".ThongTinDaGuiLoiMoiKetBan" />
+        <activity android:name=".ThongTinDaKetBanActivity" />
+        <activity android:name=".ThongTinChuaKetBanActivity" />
+        <activity android:name=".DoiMatKhauActivity" />
+        <activity android:name=".NhapMatKhauMoiActivity" />
+        <activity android:name=".LayLaiMatKhauActivity" />
+        <activity android:name=".SuaThongTinNguoiDungActivity" />
+        <activity android:name=".DangKyMatKhauActivity" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TroChuyenActivity" />
+        <activity android:name=".NhapMaOTPActivity" />
+        <activity android:name=".DangKyHoTenActivity" />
+        <activity android:name=".DangKySoDienThoaiActivity" />
+        <activity android:name=".DangNhapActivity" />
+        <activity android:name=".WelcomeActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

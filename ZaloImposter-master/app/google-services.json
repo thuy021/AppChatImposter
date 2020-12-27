@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "794147616122",
+    "project_id": "importes-fb4f4",
+    "storage_bucket": "importes-fb4f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794147616122:android:10a33da3ac4ce79a0dd2c3",
+        "android_client_info": {
+          "package_name": "com.example.appchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794147616122-s62kv8n2qh1dduq8b5af1lk67aiuo889.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBanUfix6bqGAuep-qNAKeLuBPoaxosQNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794147616122-s62kv8n2qh1dduq8b5af1lk67aiuo889.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
